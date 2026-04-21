@@ -1,6 +1,6 @@
 import img1 from "./assets/rasm1.png";
 import img2 from "./assets/image2.png";
-import img3 from "./assets/image3.png";
+import img3 from "./assets/image.png";
 import "./index.css";
 
 import React, { useState, useEffect } from "react";
@@ -148,11 +148,11 @@ const Hero = () => (
         />
         Frontend Muhandisi & UI Dizayner
       </div>
-      <h1 className="text-7xl md:text-[140px] font-black mb-10 tracking-tighter leading-[0.85] text-white uppercase">
-        ZAMONAVIY <br />
-        <span className="text-gradient">RAQAMLI</span> <br />
-        DUNYOLAR
-      </h1>
+  <h1 className="text-5xl xs:text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[120px] 2xl:text-[140px] font-black mb-4 xs:mb-6 sm:mb-8 md:mb-10 tracking-tighter leading-[0.85] text-white uppercase">
+  ZAMONAVIY <br />
+  <span className="text-gradient">RAQAMLI</span> <br />
+  DUNYOLAR
+</h1>
       <p className="text-slate-400 text-lg md:text-2xl max-w-3xl mx-auto mb-16 leading-relaxed font-medium">
         Men Nabinurman. Murakkab g'oyalarni sodda, chiroyli va yuqori
         unumdorlikka ega interfeyslarga aylantiraman.
@@ -309,7 +309,7 @@ const Skills = () => {
   );
 };
 
-const Projects = () => {
+const Projects = () => {  
   const projs = [
     {
       title: "GreenShop",
@@ -328,12 +328,12 @@ const Projects = () => {
       path: "https://react-router-2-grsz.vercel.app/",
     },
     {
-      title: "Crypto Nest",
-      type: "FinTech Dashboard",
+      title: "CRM",
+      type: "Mijozlar bilan ishlash",
       tech: "TypeScript, React",
       image: img3,
-      desc: "Kriptovalyuta aktivlarini boshqarish uchun professional dashboard.",
-      path: "https://react-13-taupe.vercel.app",
+      desc: "Next.js texnalogiyasi bilan qilingan mijozlar bilan ishlaydigan sayt.",
+      path: "https://next-4-three.vercel.app/auth/login",
     },
   ];
 
@@ -476,7 +476,7 @@ const Contact = () => {
                 </a>
 
                 <a
-                  href="https://www.instagram.com/nabinurcoding/"
+                  href="https://www.instagram.com/nabinursharopov/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-6 group cursor-pointer relative z-40 p-2 rounded-3xl hover:bg-white/5 transition-colors duration-300"
@@ -485,7 +485,7 @@ const Contact = () => {
                     <Instagram size={24} />
                   </div>
                   <span className="text-2xl font-black text-white group-hover:text-pink-400 transition-colors duration-300">
-                    @nabinurcoding
+                    @nabinursharopov
                   </span>
                 </a>
               </div>
@@ -544,38 +544,12 @@ const Certificates = () => {
       id: 1,
       name: "Frontend React.js",
       school: "Najot Ta'lim",
-      date: "2024",
+      date: "2025-2026",
       credential: "NT-2024-001",
       image: "https://via.placeholder.com/300x200", // Sertifikat rasmi
       link: "https://example.com/certificate1",
     },
-    {
-      id: 2,
-      name: "JavaScript Professional",
-      school: "Coursera",
-      date: "2023",
-      credential: "CR-2023-456",
-      image: "https://via.placeholder.com/300x200",
-      link: "https://example.com/certificate2",
-    },
-    {
-      id: 3,
-      name: "UI/UX Design",
-      school: "Google",
-      date: "2023",
-      credential: "GG-2023-789",
-      image: "https://via.placeholder.com/300x200",
-      link: "https://example.com/certificate3",
-    },
-    {
-      id: 4,
-      name: "Tailwind CSS",
-      school: "Frontend Masters",
-      date: "2024",
-      credential: "FM-2024-321",
-      image: "https://via.placeholder.com/300x200",
-      link: "https://example.com/certificate4",
-    },
+
   ];
 
   return (
@@ -655,21 +629,15 @@ const Certificates = () => {
         {/* Statistika */}
         <div className="mt-24 grid md:grid-cols-3 gap-8">
           <div className="glass p-8 rounded-[40px] text-center">
-            <p className="text-5xl font-black text-indigo-400 mb-2">10+</p>
+            <p className="text-5xl font-black text-indigo-400 mb-2">1+</p>
             <p className="text-slate-400 font-bold uppercase tracking-wider text-xs">
               Sertifikatlar
             </p>
           </div>
           <div className="glass p-8 rounded-[40px] text-center">
-            <p className="text-5xl font-black text-indigo-400 mb-2">5+</p>
+            <p className="text-5xl font-black text-indigo-400 mb-2">3+</p>
             <p className="text-slate-400 font-bold uppercase tracking-wider text-xs">
-              Online Kurslar
-            </p>
-          </div>
-          <div className="glass p-8 rounded-[40px] text-center">
-            <p className="text-5xl font-black text-indigo-400 mb-2">3</p>
-            <p className="text-slate-400 font-bold uppercase tracking-wider text-xs">
-              Xalqaro Sertifikatlar
+              Kurslar
             </p>
           </div>
         </div>
